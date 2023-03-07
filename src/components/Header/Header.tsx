@@ -22,9 +22,6 @@ const Header = () => {
         behavior: "smooth",
       });
     }
-
-    console.log();
-    console.log(window.scrollY);
   };
   // window.addEventListener("click", handleClick);
   return (

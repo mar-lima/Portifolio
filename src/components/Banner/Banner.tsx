@@ -30,7 +30,7 @@ const Banner = () => {
           Desenvolvedor Front-end com experiência em React.js,
           Next.js, Redux, JavaScript, TypeScript, Styled Components, Material UI
           e consumo de APIs REST. Apaixonado pelo desenvolvimento de componentes
-          reutilizáveis.?
+          reutilizáveis.
         </p>
       </S.Description>
     </S.Banner>

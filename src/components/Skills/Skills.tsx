@@ -1,4 +1,12 @@
-import React, { useRef, useState, version } from "react";
+import React, {
+  HtmlHTMLAttributes,
+  useEffect,
+  useRef,
+  useState,
+  version,
+  WheelEvent,
+  WheelEventHandler,
+} from "react";
 import * as S from "./styles";
 import {
   DiJavascript,
@@ -13,18 +21,15 @@ import Header from "../Header/Header";
 import Carousel from "../Carousel/Carousel";
 import Box from "../Ui/Box/Box";
 
-const Skills = () => {
 
-  const ref = useRef(null)
-  const handleClick = () => {
-    ref.current
-    console.log( ref)
-  }
+
+const Skills = () => {
+  
 
 
   return (
     <S.Container>
-      <h2 onClick={handleClick}>Habilidades</h2>
+      <h2>Habilidades</h2>
       <S.Contain>
         <Box title="HTML5">
           <AiFillHtml5 />

@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
+// type ContainerProps = {
+//   left: boolean
+// }
+// left: ${props=> (props.left ? '0%' : '-90%')};
+
 export const Container = styled.div`
+  transition: all ease-in-out .4s;
   width: 100%;
   height: 100%;
   display: flex;
@@ -8,6 +14,8 @@ export const Container = styled.div`
   align-items: center;
   flex-wrap: wrap;
   margin-top: 5%;
+  cursor: pointer;
+  
 
   span {
     color: #8257e6;
