@@ -51,6 +51,7 @@ const App = () => {
       </S.Anime>
       {/* <S.Anime left={project} ref={myProject}><Projects/></S.Anime> */}
       <Projects right={project} ref={myProject} />
+      <Projects right={project} ref={myProject} />
     </S.Container>
   );
 };
