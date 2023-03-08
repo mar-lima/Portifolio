@@ -15,6 +15,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
   margin-top: 5%;
   cursor: pointer;
+  margin-bottom: 33vh;
   
 
   span {

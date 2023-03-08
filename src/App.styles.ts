@@ -12,10 +12,13 @@ export const Container = styled.div`
   justify-content: space-between;
   flex-direction: column;
   margin-bottom: 100px;
+  overflow-x: hidden;
 `;
 
 type AnimeProps = {
-  left: boolean;
+  left?: boolean;
+  // right?: boolean
+  
 };
 
 export const Anime = styled.div<AnimeProps>`
