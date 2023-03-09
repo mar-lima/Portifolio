@@ -1,12 +1,7 @@
 import * as S from "./style";
 import React, { MutableRefObject, useEffect, useRef, useState } from "react";
 import { animation } from "../../helpers/animePage";
-type Props = {
-  ref: React.RefAttributes<HTMLDivElement>;
-  right: boolean;
-  current?: MutableRefObject<HTMLDivElement>;
-};
-
+import Project from "./PojectComponent/Project";
 const Projects = () => {
   const [rightstyle, setRightStyle] = useState(false);
   const myProject = useRef<HTMLDivElement>(null);
@@ -18,7 +13,6 @@ const Projects = () => {
       window.scrollY;
       if (windowTop > projects) {
         setRightStyle(true);
-        console.log(window)
       } else {
         setRightStyle(false);
       }
@@ -34,6 +28,10 @@ const Projects = () => {
   return (
     <S.Projects id="project" right={rightstyle} ref={myProject} cor={muda}>
       <h1>Destaques</h1>
+      <S.Container>
+        <Project />
+      </S.Container>
+      
     </S.Projects>
   );
 };
