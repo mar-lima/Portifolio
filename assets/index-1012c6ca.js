@@ -105,7 +105,7 @@ Error generating stack: `+i.message+`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   border-bottom: 5px solid #8257e6;
   h1 {
@@ -115,19 +115,15 @@ Error generating stack: `+i.message+`
     color: #8257e6;
     font-size: 2rem;
   }
-  img {
-    width: 100%;
-    max-width: 300px;
-    
-  }
-  
-  
 `,W1=lt.div`
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
   .banner-area-a {
     flex: 1;
+    width: 100%;
     height: 80vh;
     margin: 4%;
     font-weight: bold;
@@ -137,8 +133,16 @@ Error generating stack: `+i.message+`
     justify-content: center;
     flex-direction: column;
   }
+  .banner-area-a a {
+    max-width: 250px;
+  }
+  img {
+    width: 100%;
+    width: 350px;
+  }
   .banner-area-b {
     flex: 1;
+    width: 100%;
     height: 400px;
     margin: 4%;
     font-weight: bold;
@@ -147,7 +151,7 @@ Error generating stack: `+i.message+`
     align-items: center;
     justify-content: center;
   }
-  //Responsive area
+  //===========Responsive area ==============\\
   @media (max-width: 750px) {
     h1 {
       font-size: 2rem;
@@ -157,30 +161,32 @@ Error generating stack: `+i.message+`
       font-size: 1rem;
     }
     img {
-      max-width: 200px;
+      width: 100%;
+      max-width: 320px;
     }
-  };
+  }
   //=======================================\\
   @media (max-width: 450px) {
     margin-top: 20%;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-  }
-  h1 {
+
+    h1 {
       font-size: 1rem;
     }
     span {
       margin-top: 20px;
-      font-size: .6rem;
+      font-size: 0.6rem;
       text-align: center;
-    }
-    img {
-      max-width: 110px;
     }
     .banner-area-a {
       align-items: center;
     }
+    img {
+      max-width: 150px;
+    }
+  }
 `,Q1=lt.div`
   display: flex;
   flex-direction: column;
@@ -209,16 +215,16 @@ Error generating stack: `+i.message+`
       margin-bottom: 40px;
     }
   }
-  @media (max-width: 450px){
+  @media (max-width: 450px) {
     h2 {
       font-size: 1rem;
     }
     p {
-      font-size: .6rem;
+      font-size: 0.6rem;
       text-align: center;
     }
   }
-`,ad="/Portifolio/assets/HeroLogo-690867bb.png",Y1=()=>ct(V1,{children:[ct(W1,{children:[ct("div",{className:"banner-area-a",children:[I("h1",{children:"Olá, eu sou "}),I("span",{children:"Marcelo Lima :) Desenvolvedor Front-End"}),I(B1,{target:"_blank",href:"https://www.linkedin.com/in/marcelo-lima-05b062211/",btn:"Entrar em contato"})]}),I("div",{className:"banner-area-b",children:I("a",{href:"https://github.com/mar-lima",children:I("img",{src:ad,alt:""})})})]}),ct(Q1,{children:[I("h2",{children:"Sobre mim "}),I("p",{children:"Desenvolvedor Front-end com experiência em React.js, Next.js, Redux, JavaScript, TypeScript, Styled Components, Material UI e consumo de APIs REST. Apaixonado pelo desenvolvimento de componentes reutilizáveis."})]})]}),G1=lt.div`
+`,ad="/Portifolio/assets/HeroLogo-690867bb.png",Y1=()=>ct(V1,{children:[ct(W1,{children:[ct("div",{className:"banner-area-a",children:[I("h1",{children:"Olá, eu sou "}),I("span",{children:"Marcelo Lima :) Desenvolvedor Front-End"}),I(B1,{target:"_blank",href:"https://www.linkedin.com/in/marcelo-lima-05b062211/",btn:"Entrar em contato"})]}),I("div",{className:"banner-area-b",children:I("a",{href:"https://github.com/mar-lima",children:I("img",{src:ad,alt:"Hero Logo"})})})]}),ct(Q1,{children:[I("h2",{children:"Sobre mim "}),I("p",{children:"Desenvolvedor Front-end com experiência em React.js, Next.js, Redux, JavaScript, TypeScript, Styled Components, Material UI e consumo de APIs REST. Apaixonado pelo desenvolvimento de componentes reutilizáveis."})]})]}),G1=lt.div`
   width: 100vw;
   height: 90px;
 
