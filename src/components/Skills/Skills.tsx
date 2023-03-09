@@ -1,12 +1,4 @@
-import React, {
-  HtmlHTMLAttributes,
-  useEffect,
-  useRef,
-  useState,
-  version,
-  WheelEvent,
-  WheelEventHandler,
-} from "react";
+import { useEffect, useRef, useState } from "react";
 import * as S from "./styles";
 import {
   DiJavascript,
@@ -14,21 +6,34 @@ import {
   FaCss3Alt,
   SiTypescript,
   SiMui,
+  FaFigma,
 } from "react-icons/all";
-
-import Header from "../Header/Header";
-
-import Carousel from "../Carousel/Carousel";
 import Box from "../Ui/Box/Box";
-
-
+import { animation } from "../../helpers/animePage";
 
 const Skills = () => {
-  
+  const skillRef = useRef<HTMLDivElement>(null);
+  const [anime, setAnime] = useState(true);
 
-
+  useEffect(() => {
+    const scrollListner = () => {
+      const win = animation.anime();
+      const windowTop = win;
+      var projects: any = skillRef.current?.offsetTop;
+      window.scrollY;
+      if (windowTop > projects) {
+        setAnime(true);
+      } else {
+        setAnime(false);
+      }
+    };
+    window.addEventListener("scroll", scrollListner);
+    return () => {
+      window.removeEventListener("scroll", scrollListner);
+    };
+  }, []);
   return (
-    <S.Container>
+    <S.Container ref={skillRef} left={anime}>
       <h2>Habilidades</h2>
       <S.Contain>
         <Box title="HTML5">
@@ -48,6 +53,9 @@ const Skills = () => {
         </Box>
         <Box title="Material UI">
           <SiMui />
+        </Box>
+        <Box title="Figma">
+          <FaFigma />
         </Box>
       </S.Contain>
     </S.Container>

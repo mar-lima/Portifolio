@@ -1,17 +1,12 @@
-import React from 'react'
+import React from "react";
 
+type Props = {
+  pagewin?: Function;
+};
 export const animation = {
-  anime: (e: any) => {
-
+  anime: () => {
     var win;
-    console.log()
-    return (win = e.window.pageYOffset + (e.innerHeight * 3) / 4);
+
+    return (win = window.scrollY + (window.innerHeight * 3) / 4);
   },
-
-  // animeRef: React.forwardRef<HTMLDivElement>((ref) => {
-
-  //   return ref
-   
-     
-  // }),
 };

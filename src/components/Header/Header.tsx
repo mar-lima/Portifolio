@@ -26,7 +26,7 @@ const Header = () => {
   // window.addEventListener("click", handleClick);
   return (
     <S.Container>
-      <div id="0" onClick={handleClick}>
+      <div className="img" id="0" onClick={handleClick}>
         <img src={HeroLogo} alt="" />
       </div>
       <div id="1" onClick={handleClick}>

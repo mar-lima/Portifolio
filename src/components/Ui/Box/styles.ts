@@ -33,5 +33,19 @@ export const Skils = styled.div`
   :hover{
     transform: scale(1.3);
   }
+  @media (max-width: 750px){
+    max-width: 90px;
+    max-height: 90px;
+  }
+  span {
+    margin-bottom: 5px;
+  }
+  @media (max-width: 450px){
+    max-width: 70px;
+    max-height: 70px;
+  }
+  span {
+    font-size: .5rem;
+  }
   
 `;

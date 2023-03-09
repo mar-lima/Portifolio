@@ -1,12 +1,13 @@
 import styled from "styled-components";
+type AnimeProps = {
+  left?: boolean;
+};
 
-// type ContainerProps = {
-//   left: boolean
-// }
-// left: ${props=> (props.left ? '0%' : '-90%')};
-
-export const Container = styled.div`
-  transition: all ease-in-out .4s;
+export const Container = styled.div<AnimeProps>`
+  position: relative;
+  transition:2.1s cubic-bezier(.44,.44,.13,1.58);
+  left: ${(props) => (props.left ? "0%" : "-120%")};
+  opacity: ${(props) => (props.left ? "1" : "-10")};
   width: 100%;
   height: 100%;
   display: flex;
@@ -17,10 +18,20 @@ export const Container = styled.div`
   cursor: pointer;
   margin-bottom: 33vh;
   
-
   span {
     color: #8257e6;
     background-color: transparent;
+  }
+  @media (max-width: 750px) {
+    h2 {
+      font-size: 1rem;
+    }
+    span {
+      font-size: .7rem;
+    }
+    svg{
+      /* max-width: 70px; */
+    }
   }
 `;
 
