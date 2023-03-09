@@ -18,7 +18,7 @@ const Banner = () => {
       </div>
       <div className="banner-area-b">
         <a href="https://github.com/mar-lima">
-          <img src={HeroLogo} alt="" />
+          <img src={HeroLogo} alt="Hero Logo" />
         </a>
       </div>
 

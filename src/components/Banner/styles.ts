@@ -5,7 +5,7 @@ export const Banner = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   border-bottom: 5px solid #8257e6;
   h1 {
@@ -15,20 +15,16 @@ export const Banner = styled.div`
     color: #8257e6;
     font-size: 2rem;
   }
-  img {
-    width: 100%;
-    max-width: 300px;
-    
-  }
-  
-  
 `;
 export const contain = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
   .banner-area-a {
     flex: 1;
+    width: 100%;
     height: 80vh;
     margin: 4%;
     font-weight: bold;
@@ -38,8 +34,16 @@ export const contain = styled.div`
     justify-content: center;
     flex-direction: column;
   }
+  .banner-area-a a {
+    max-width: 250px;
+  }
+  img {
+    width: 100%;
+    width: 350px;
+  }
   .banner-area-b {
     flex: 1;
+    width: 100%;
     height: 400px;
     margin: 4%;
     font-weight: bold;
@@ -48,7 +52,7 @@ export const contain = styled.div`
     align-items: center;
     justify-content: center;
   }
-  //Responsive area
+  //===========Responsive area ==============\\
   @media (max-width: 750px) {
     h1 {
       font-size: 2rem;
@@ -58,30 +62,32 @@ export const contain = styled.div`
       font-size: 1rem;
     }
     img {
-      max-width: 200px;
+      width: 100%;
+      max-width: 320px;
     }
-  };
+  }
   //=======================================\\
   @media (max-width: 450px) {
     margin-top: 20%;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-  }
-  h1 {
+
+    h1 {
       font-size: 1rem;
     }
     span {
       margin-top: 20px;
-      font-size: .6rem;
+      font-size: 0.6rem;
       text-align: center;
-    }
-    img {
-      max-width: 110px;
     }
     .banner-area-a {
       align-items: center;
     }
+    img {
+      max-width: 150px;
+    }
+  }
 `;
 
 export const Description = styled.div`
@@ -112,12 +118,12 @@ export const Description = styled.div`
       margin-bottom: 40px;
     }
   }
-  @media (max-width: 450px){
+  @media (max-width: 450px) {
     h2 {
       font-size: 1rem;
     }
     p {
-      font-size: .6rem;
+      font-size: 0.6rem;
       text-align: center;
     }
   }
