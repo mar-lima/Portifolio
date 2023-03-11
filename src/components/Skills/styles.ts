@@ -21,6 +21,8 @@ export const Container = styled.div<AnimeProps>`
   span {
     color: #8257e6;
     background-color: transparent;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
   }
   @media (max-width: 750px) {
     h2 {

@@ -3,13 +3,13 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100vw;
   height: 90px;
-
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-bottom: 4px solid #4c00ff;
   position: fixed;
-  z-index: 2;
+  z-index: 99999999;
   cursor: pointer;
 
   img {

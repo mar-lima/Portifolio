@@ -3,7 +3,7 @@ import * as S from "./style";
 
 type Props = {
   btn: string;
-  href: string;
+  href?: string;
   target?: string
 };
 

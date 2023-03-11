@@ -13,7 +13,7 @@ export const Button = styled.a`
   cursor: pointer;
   transition: all ease-in-out 0.3s;
   text-decoration: none;
-  font-size: .6rem;
+  font-size: 1rem;
 
   :hover {
     background-color: #8257e6;
@@ -23,11 +23,12 @@ export const Button = styled.a`
 
   @media (max-width: 750px){
     max-width: 300px;
-    font-size: .5rem;
+    font-size: .7rem;
   }
   @media (max-width: 450px){
     width: 100%;
     height: 40px;
     margin-top: 20px;
+    font-size: .5rem;
   }
 `;

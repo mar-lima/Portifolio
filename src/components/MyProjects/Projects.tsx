@@ -30,6 +30,7 @@ const Projects = () => {
       <h1>Destaques</h1>
       <S.Container>
         <Project />
+        
       </S.Container>
       
     </S.Projects>

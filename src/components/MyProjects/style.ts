@@ -14,11 +14,10 @@ export const Projects = styled.div<AnimeProps>`
   justify-content: space-between;
   flex-direction: column;
   width: 100%;
-  height: 80vh;
-  background-color: black;
+  height: 100%;
 
   h1 {
-    margin: 0;
+    margin-bottom: 20px;
     background-color: transparent;
   }
 `;

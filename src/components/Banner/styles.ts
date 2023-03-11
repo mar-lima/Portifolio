@@ -97,7 +97,7 @@ export const Description = styled.div`
   justify-content: center;
   padding: 0 10%;
   p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 180%;
     margin-bottom: 5%;
     text-align: center;
