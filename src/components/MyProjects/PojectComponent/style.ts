@@ -31,61 +31,108 @@ export const MainArea = styled.div`
   flex-wrap: wrap;
   width: 100%;
   padding: 20px;
-`;
 
+  @media (max-width: 750px) {
+    align-items: center;
+    justify-content: center;
+  }
+`;
 export const Card = styled.div<modal>`
   width: 100%;
   max-width: 360px;
   display: flex;
-
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
   margin: 10px;
   transition: all ease-in-out 0.6s;
-
   &:hover {
     transform: scale(1.1);
-    .view-hover {
+    #view-area {
       transition: all ease-in-out 0.3s;
       top: 0;
-      opacity: 1;
+    }
+    .smoke {
+      transition: all ease-in-out 0.6s;
+      background-color: transparent;
+    }
+    h2 {
+      transition: all ease-in-out 0.3s;
+      color: transparent;
+      text-shadow: none;
     }
   }
+`;
 
-  .view-hover {
+export const CardDetails = styled.div`
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  .smoke {
     position: relative;
-    top: -100px;
-    width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    background-color: #202020;
-    transition: all ease-in-out 0.3s;
-    opacity: 1;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: #2020209c;
+    text-align: center;
   }
-  .view-hover a {
-    width: 70%;
-    height: 40px;
-    border-radius: 15px;
-    font-size: 1rem;
-  }
-
   h2 {
-    font-size: 1rem;
-  }
-  .detail {
-    z-index: 10;
+    position: absolute;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 800;
+    font-size: 28px;
+    margin: 0;
   }
   img {
     width: 100%;
     height: 100%;
     max-width: 500px;
+    z-index: -10;
+  }
+  @media (max-width: 450px) {
+    .smoke {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
   }
 `;
+export const ViewHover = styled.div`
+  position: relative;
+  top: -100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #20202040;
+  transition: all ease-in-out 0.3s;
+  opacity: 1;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  &:hover {
+    transition: all ease-in-out 0.3s;
+    top: 0;
+  }
+  a {
+    width: 70%;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 1rem;
+  }
+  @media (max-width: 450px) {
+    display: none;
+  }
+`;
+//==============================================\\
 
 export const CardModal = styled.div<modal>`
   position: fixed;
@@ -147,41 +194,63 @@ export const Area = styled.div`
   width: 100%;
   height: 100%;
   padding: 20px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  .img {
-    flex: 1.3;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 20px;
-    height: 100%;
-    width: 100%;
-  }
-  .img img {
-    width: 100%;
-  }
   .description {
     flex: 1;
     display: flex;
     height: 100%;
     width: 100%;
     text-align: center;
+    margin-top: 20px;
   }
-  .btn {
-    display: flex;
-    width: 100%;
+  @media (max-width: 750px) {
+    flex-direction: column;
+    .description{
+      font-size: 18px;
+    }
   }
-  .btn a {
+`;
+export const Buttons = styled.div`
+  display: flex;
+  width: 100%;
+
+  a {
     transform: scale(0.9, 0.7);
     transition: all ease-in-out 0.3s;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 16px;
+    padding: 10px;
   }
-  .btn a:hover {
+  a:hover {
     transform: scale(0.9, 0.8);
+  }
+  @media (max-width: 550px) {
+    flex-direction: column;
+    margin: 0;
+    a{
+      margin: 0;
+    }
+  }
+`;
+export const AreaImg = styled.div`
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+  height: 100%;
+  width: 100%;
+  
+  img {
+    width: 100%;
+    opacity: 0.8;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 750px) {
+    max-width: 80%;
   }
 `;

@@ -26,17 +26,20 @@ const Project = () => {
         <S.MainArea id="asdasdad">
           {items.map((item) => (
             <S.Card
-              id="asd"
+              id="card"
               key={item.id}
               cardwind={modal}
               onMouseUp={() => handleOpenModal(item.id)}>
-              <div className="detail">
-                <img src={item.img} alt="" />
-                <div className="smoke"></div>
-              </div>
-              <div className="view-hover">
+              <S.CardDetails>
+                <div className="smoke">
+                  <h2>{item.title}</h2>
+                  <img src={item.img} alt="" />
+                </div>
+              </S.CardDetails>
+
+              <S.ViewHover id="view-area">
                 <Button btn="Ver mais?" />
-              </div>
+              </S.ViewHover>
             </S.Card>
           ))}
         </S.MainArea>
@@ -50,12 +53,12 @@ const Project = () => {
                     <RiCloseCircleFill />
                   </div>
                 </div>
-                <S.modalArea>
+                <S.modalArea id="modalarea">
                   <h2>{item.title}</h2>
                   <S.Area>
-                    <div className="img">
+                    <S.AreaImg>
                       <img src={item.img} alt="" />
-                      <div className="btn">
+                      <S.Buttons>
                         <Button btn="Acessar projeto  " href={item.porject} />
                         <Button
                           btn="Acessar repositório"
@@ -65,8 +68,8 @@ const Project = () => {
                           btn="Ver post no Linkedin"
                           href="https://www.linkedin.com/in/marcelo-lima-05b062211/"
                         />
-                      </div>
-                    </div>
+                      </S.Buttons>
+                    </S.AreaImg>
                     <div className="description">
                       <span>{item.description}</span>
                     </div>

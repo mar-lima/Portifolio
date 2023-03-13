@@ -27,7 +27,7 @@ const Projects = () => {
   console.log();
   return (
     <S.Projects id="project" right={rightstyle} ref={myProject} cor={muda}>
-      <h1>Destaques</h1>
+      <h2>Destaques</h2>
       <S.Container>
         <Project />
         

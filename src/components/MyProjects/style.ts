@@ -16,9 +16,14 @@ export const Projects = styled.div<AnimeProps>`
   width: 100%;
   height: 100%;
 
-  h1 {
+  h2 {
     margin-bottom: 20px;
     background-color: transparent;
+  }
+  @media (max-width: 750px) {
+    h2 {
+      font-size: 22px;
+    }
   }
 `;
 

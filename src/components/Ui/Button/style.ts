@@ -4,7 +4,7 @@ export const Button = styled.a`
   width: 100%;
   height: 50px;
   border: 2px solid #8257e6;
-  border-radius: 50px;
+  border-radius: 15px;
   margin: 5% 0;
   color: #8257e6;
   display: flex;
@@ -14,6 +14,7 @@ export const Button = styled.a`
   transition: all ease-in-out 0.3s;
   text-decoration: none;
   font-size: 1rem;
+  transform: scale(.8);
 
   :hover {
     background-color: #8257e6;
