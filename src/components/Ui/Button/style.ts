@@ -29,6 +29,6 @@ export const Button = styled.a`
     width: 100%;
     height: 40px;
     margin-top: 20px;
-    font-size: .5rem;
+    font-size: .7rem;
   }
 `;

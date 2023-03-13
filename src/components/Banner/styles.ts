@@ -74,11 +74,11 @@ export const contain = styled.div`
     justify-content: center;
 
     h1 {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
     span {
       margin-top: 20px;
-      font-size: 0.6rem;
+      font-size: 0.8rem;
       text-align: center;
     }
     .banner-area-a {
@@ -120,10 +120,10 @@ export const Description = styled.div`
   }
   @media (max-width: 450px) {
     h2 {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
     p {
-      font-size: 0.6rem;
+      font-size: .8rem;
       text-align: center;
     }
   }
