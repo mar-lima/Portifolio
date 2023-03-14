@@ -7,7 +7,7 @@ type scroll = {
 export const Scrollpage = styled.div<scroll>`
   position: fixed;
   top: 50vh;
-  left: ${props => props.scroll ? '-15px' : '-150px'};
+  left: ${props => props.scroll ? '-18px' : '-150px'};
   transition: all ease-in-out .6s;
   background-color: transparent;
   transform: rotate(90deg);
@@ -15,7 +15,7 @@ export const Scrollpage = styled.div<scroll>`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 10px;
   cursor: pointer;
   z-index: 100;
 
