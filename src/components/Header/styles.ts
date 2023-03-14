@@ -7,7 +7,8 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 4px solid #4c00ff;
+  box-shadow: 0 1px 8px 1px #4c00ff;
+  background-color:  #13131f;
   position: fixed;
   z-index: 99999999;
   cursor: pointer;

@@ -7,24 +7,20 @@ export const GlobalStyle = createGlobalStyle`
 }    
 * {
     
-        align-items: center;
-        font-family: 'Roboto', sans-serif;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        color: #dce0e8;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     
-        background-color:  #13131f;
-        
-    }
-    body {
-        body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    
 }
+body {
+    
+    color: #dce0e8;
+    background-color:  #13131f;
+    margin: 0 auto;
+    min-width: 320px;
+    min-height: 100vh; 
     }
 
 `;
